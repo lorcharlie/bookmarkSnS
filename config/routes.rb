@@ -1,4 +1,9 @@
 BookmarkSnS::Application.routes.draw do
+  resources :bookmarks
+
+  root to: 'bookmarks#index'
+
+  match '/view',    to: 'bookmarks#view'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

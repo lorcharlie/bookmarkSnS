@@ -1,0 +1,14 @@
+<header class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <%= link_to "BookmarkSnS", bookmarks_path, id: "logo" %>
+      <nav>
+        <ul class="nav pull-right">
+          <li><%= link_to "Home",    bookmarks_path %></li>
+          <li><%= link_to "View Bookmarks", view_path%></li>
+          <li><%= link_to "Create",   new_bookmark_path %></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
